@@ -1,0 +1,13 @@
+# Environment variables (Secret API Keys)
+.env
+
+# Python cache & virtual environment
+_pycache_/
+*.py[cod]
+venv/
+.venv/
+env/
+
+# OS / Editor files
+.vscode/
+.DS_Store
