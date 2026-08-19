@@ -1,11 +1,10 @@
-# AI-Study-Assistant
 # 🤖 AI Study Assistant
 
-A beginner-friendly AI learning assistant built for  students.
+A beginner-friendly AI learning assistant built for students.
 
 ## 📌 About the Project
 
-AI Study Assistant helps students understand concepts, solve questions, summarize topics, and practice through quizzes, for Programmer use Code Review.
+AI Study Assistant helps students understand concepts, solve questions, summarize topics, and practice through quizzes, for Programmer Code Review .
 
 The application provides a simple and user-friendly interface where students can enter their questions and get AI-generated answers.
 
@@ -19,7 +18,7 @@ The application provides a simple and user-friendly interface where students can
 - ➗ Mathematics questions
 - 🌐 Language support
 - 🇮🇳 Hindi / Hinglish support
-- اردوurdu language support
+- اردو Urdu language support
 
 ## 📖 Subjects
 
