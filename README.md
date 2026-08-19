@@ -28,6 +28,10 @@ The application focuses on three main categories:
 - C
 - C++
 - Python
+- C#
+- Java
+-Javascript
+-Other
 
 ### 2. General Questions
 Students can ask general knowledge and educational questions.
