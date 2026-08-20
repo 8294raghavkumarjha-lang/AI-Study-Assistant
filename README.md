@@ -10,14 +10,15 @@ The application provides a simple and user-friendly interface where students can
 
 ## ✨ Features
 
-- 📚 Explain concepts in simple language
-- 📝 Summarize topics
-- ❓ Ask general questions
-- 🧠 Generate quizzes
-- 💻 Programming help
-- ➗ Mathematics questions
-- 🌐 Language support
-- 🇮🇳 Hindi / Hinglish support
+- 📑 *Interactive Flashcards:* Auto-generate quick revision cards for active recall
+- 💻 *Code Review & Debugging:* Line-by-line code analysis, bug fixes, and best practices
+- 📖 *Explain Concepts:* Beginner-friendly explanations with real-world analogies
+- 📝 *Summarize Topics:* Concise, exam-focused revision notes
+- ❓ *AI Ask (Doubt Solver):* Direct interactive Q&A for general and academic topics
+- ➗ *Native LaTeX Math:* Clean, textbook-grade mathematical rendering
+- 🌐 *Multi-Language Support:* Full support for English, Hindi, and Hinglish
+
+
 - اردو Urdu language support
 
 ## 📖 Subjects
@@ -52,7 +53,7 @@ Students can ask mathematical questions and get step-by-step explanations.
 ```text
 User
   ↓
-Streamlit Interface
+Streamlit Interface (Learning Settings)
   ↓
 Python
   ↓
