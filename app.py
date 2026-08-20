@@ -68,8 +68,8 @@ st.sidebar.header("⚙️ Learning Settings")
 subject = st.sidebar.selectbox(
     "Subject",
     [
-        "Programming",
         "General Questions",
+        "Programming",
         "Mathematics"
     ]
 )
@@ -182,7 +182,9 @@ def create_prompt(
 
         subject_context = f"""
 The student is learning {programming_language}.
-subject_context = f"""
+-Write clean,modern , and well-commented {programming_language} code.
+-Explain the syntax and execution flow step-by-by-step.
+ """
 
 
     # ----------------------------------------------
@@ -251,6 +253,7 @@ STRUCTURE YOUR EXPLANATION:
 FORMATTING RULES:
 - Always use standard LaTeX ($...$ for inline and $$...$$ for display) for all mathematical expressions and formulas.
 - Use explicit bold headings for each section.
+- Do NoT force programming code on purely conceptual, theoretiacl,or hardware topics.
 - Keep the tone encouraging, structured, and easy to scan.
 
 Student question:
