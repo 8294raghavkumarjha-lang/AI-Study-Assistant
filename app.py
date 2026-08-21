@@ -296,41 +296,43 @@ Study material:
 """
 
 
+# ==================================================
+    # QUIZ MODE (Dynamic Question Count)
     # ==================================================
-    # QUIZ MODE
-    # ==================================================
-
     elif mode == "Quiz":
 
-        return f"""
-You are a friendly {subject} teacher for a beginner student.
-
+      return f"""You are an expert exam tutor. Create an interactive multiple-choice practice quiz for the student on the topic: '{user_input}'.
 {subject_context}
-
 {language_instruction}
 
-Create a beginner-friendly practice quiz.
+STRICT RULES:
+1. **QUESTION COUNT**: 
+   - Check if the user specified a specific number of questions in '{user_input}' (e.g., 5, 10, 25, 50 questions).
+   - If a number is specified, you MUST generate EXACTLY that number of questions (numbered 1 to N).
+   - If NO number is mentioned, default to generating 10 questions.
+2. **DO NOT WRITE CODE**: Output ONLY direct quiz questions in clean Markdown text. Do NOT write any Python script, code, or program.
+3. **NO TRUNCATION**: For large question counts (like 30-50), keep each question, option, and explanation concise and single-line so all questions finish completely without cutting off.
 
-Create:
+Output Format:
+## 📝 Practice Quiz
 
-- If user specifies a number of question,generate exactly that many question. otherwise ,default to 5 multiple-choice questions
-- 4 options for each question (A, B, C, D)
--  Dot NOT reveal the Answers and Explanation at the very bottom hidden inside a Markdown spoiler like:
- <details>
- <summary> click here to view Correct answer</summary>Explanation here.</details>
- 1.Answer:
- 2.Answer:
- 3.Answer:
- 4.Answer:
- - One-line explanation for each answer
+**Question 1:** [Question text]
+- A) [Option A]
+- B) [Option B]
+- C) [Option C]
+- D) [Option D]
 
-Keep the questions appropriate for a beginner.
+(Continue until all requested questions are generated)
 
-Topic:
+---
 
-{user_input}
+### 🔍 Answer Key & Explanations
+1. **Answer: [Option Letter]** 
+—[1-sentence explanation]
+2. **Answer: [Option Letter]** 
+— [1-sentence explanation]
+(Provide answers for all generated questions)
 """
-
 
     # ==================================================
     # CODE REVIEW MODE
@@ -374,7 +376,7 @@ Student's code:
 
     elif mode == "Flashcards":
 
-        prompt = f"""You are an expert AI tutor. For the topic: '{user_input}', generate a comprehensive visual breakdown followed by detailed study flashcards.
+        return f"""You are an expert AI tutor. For the topic: '{user_input}', generate a comprehensive visual breakdown followed by detailed study flashcards.
 Language: {language}.
 
 Structure the output strictly into two sections:
@@ -477,16 +479,16 @@ elif mode == "Flashcards":
     st.subheader("🃏 Create Flashcards")
 
     placeholder = (
-        "Example: C pointers"
+        "Example: Explain Topic"
     )
 
 
 else:
 
-    st.subheader("🤖 Ask Your AI Tutor")
+    st.subheader("🤖 Ask Your AI ")
 
     placeholder = (
-        "Example: What is a pointer in C?"
+        "Example: Ask Any things?"
     )
 
 
@@ -575,7 +577,7 @@ if st.button(
                 "🤖 AI Tutor Response"
             )
 
-            st.write(answer)
+            st.markdown(answer)
 
 
         # ------------------------------------------
